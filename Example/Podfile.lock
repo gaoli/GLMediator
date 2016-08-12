@@ -1,5 +1,5 @@
 PODS:
-  - GLMediator (0.1.0)
+  - GLMediator (1.0.0)
 
 DEPENDENCIES:
   - GLMediator (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GLMediator: 2357e103300c527386314e1bfab3f189c2dba71e
+  GLMediator: 05cb6b02b47afcd223048e732f1f7866905c2c37
 
 COCOAPODS: 0.39.0

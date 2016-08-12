@@ -10,6 +10,22 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
+		<key>03D5F4BA492240B630DB494E0FDB4DF1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0EEAEE49AED54EBDB8CCA714666C58A2</string>
+				<string>31FDBBB29CA97EAB97665E4DF52DC0FD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Classes</string>
+			<key>path</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>04443B580326D3BD1A0D8FB720017108</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -20,6 +36,19 @@
 			<string>text.xcconfig</string>
 			<key>path</key>
 			<string>Pods-GLMediator_Tests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0EEAEE49AED54EBDB8CCA714666C58A2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>GLMediator.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -100,24 +129,34 @@
 			<key>proxyType</key>
 			<string>1</string>
 			<key>remoteGlobalIDString</key>
-			<string>76FCF928BF5F40357CD99D2626B4BB6B</string>
+			<string>162514F040BF51D510F0F20B863BB115</string>
 			<key>remoteInfo</key>
 			<string>GLMediator</string>
 		</dict>
-		<key>181389448DA3B8CA5E9F300022EFF0FF</key>
+		<key>162514F040BF51D510F0F20B863BB115</key>
 		<dict>
-			<key>children</key>
+			<key>buildConfigurationList</key>
+			<string>486F34C95D8569A647342D66021973EB</string>
+			<key>buildPhases</key>
 			<array>
-				<string>96BB627600799DC4B920097C6B561B40</string>
+				<string>9DB3D3CFC88AE8028F90222BEE87FDC6</string>
+				<string>E77AF64B65C7263368C63DF36EFC583F</string>
+				<string>4DA0C53474C1CED41788F19401A2A82F</string>
 			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXNativeTarget</string>
 			<key>name</key>
-			<string>Classes</string>
-			<key>path</key>
-			<string>Classes</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>GLMediator</string>
+			<key>productName</key>
+			<string>GLMediator</string>
+			<key>productReference</key>
+			<string>24352A896E0F357A49D05B25E3416F78</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
 		</dict>
 		<key>193ADEC5AA965A98635959949F08974B</key>
 		<dict>
@@ -179,6 +218,13 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>284DEFD136028984640706A66CA8758F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>274753B943899840EDDC49988471288C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>2AEA8FD2D5773499FCC4C63AF4BC9493</key>
 		<dict>
 			<key>children</key>
@@ -192,20 +238,6 @@
 			<string>Targets Support Files</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2B530C53627FC990D5625E00ED6FF332</key>
-		<dict>
-			<key>fileRef</key>
-			<string>96BB627600799DC4B920097C6B561B40</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2CB303897689C5D9803879BFD07F7B60</key>
-		<dict>
-			<key>fileRef</key>
-			<string>274753B943899840EDDC49988471288C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>2CB89DE24C569196DDC6A2339C7FA233</key>
 		<dict>
@@ -234,33 +266,18 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>2E3360CFD5DE17C5D652E9B522165677</key>
+		<key>31FDBBB29CA97EAB97665E4DF52DC0FD</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>181389448DA3B8CA5E9F300022EFF0FF</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>GLMediator</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>GLMediator</string>
+			<string>GLMediator.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>35DA775DC160BFE5C5FF84C595C94F08</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>AA94E26BA191A194146002A27F1112CA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
 		</dict>
 		<key>393BFEB682639621391DB4DFFCC82772</key>
 		<dict>
@@ -271,7 +288,7 @@
 			<key>proxyType</key>
 			<string>1</string>
 			<key>remoteGlobalIDString</key>
-			<string>76FCF928BF5F40357CD99D2626B4BB6B</string>
+			<string>162514F040BF51D510F0F20B863BB115</string>
 			<key>remoteInfo</key>
 			<string>GLMediator</string>
 		</dict>
@@ -314,6 +331,27 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>461ECE601C32C9089006E651FE6679E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>31FDBBB29CA97EAB97665E4DF52DC0FD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>486F34C95D8569A647342D66021973EB</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C66F57F32DEE4ED033E7002894F16ED5</string>
+				<string>824A3ADD10D5FC7E8602BF7E6229D10D</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
 		<key>4B745516BFE7468F60F10B79D8B02A88</key>
 		<dict>
 			<key>buildConfigurations</key>
@@ -340,6 +378,19 @@
 			<string>Pods-GLMediator_Tests-acknowledgements.markdown</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4DA0C53474C1CED41788F19401A2A82F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CF677910F8CB4799E9F0AAB4C3CBD195</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>50319E753E00EC4BA488E325F6A89E4E</key>
 		<dict>
@@ -550,30 +601,6 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>76FCF928BF5F40357CD99D2626B4BB6B</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>7FCB62BD606CA2CD627AA83C15D987E0</string>
-			<key>buildPhases</key>
-			<array>
-				<string>835FBA3CF811DE5BBF694369F7C333A0</string>
-				<string>35DA775DC160BFE5C5FF84C595C94F08</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>GLMediator</string>
-			<key>productName</key>
-			<string>GLMediator</string>
-			<key>productReference</key>
-			<string>24352A896E0F357A49D05B25E3416F78</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
 		<key>7B287CBF2835E6B57FCDFB8377B57E50</key>
 		<dict>
 			<key>isa</key>
@@ -581,7 +608,7 @@
 			<key>name</key>
 			<string>GLMediator</string>
 			<key>target</key>
-			<string>76FCF928BF5F40357CD99D2626B4BB6B</string>
+			<string>162514F040BF51D510F0F20B863BB115</string>
 			<key>targetProxy</key>
 			<string>393BFEB682639621391DB4DFFCC82772</string>
 		</dict>
@@ -620,43 +647,49 @@
 			<key>name</key>
 			<string>GLMediator</string>
 			<key>target</key>
-			<string>76FCF928BF5F40357CD99D2626B4BB6B</string>
+			<string>162514F040BF51D510F0F20B863BB115</string>
 			<key>targetProxy</key>
 			<string>13C56FA67B3A06905F8ED67EBEBB0C05</string>
 		</dict>
-		<key>7FCB62BD606CA2CD627AA83C15D987E0</key>
+		<key>824A3ADD10D5FC7E8602BF7E6229D10D</key>
 		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>A34FC13DDCD8D5D7D8E7B55FB2854A97</string>
-				<string>F86CF79FD396C88E1D9AB8E87FE0EECE</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
+			<key>baseConfigurationReference</key>
+			<string>FACCF914085BBEE6FE9BC99BD3D5B838</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/GLMediator/GLMediator-prefix.pch</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
 			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>835FBA3CF811DE5BBF694369F7C333A0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>2CB303897689C5D9803879BFD07F7B60</string>
-				<string>2B530C53627FC990D5625E00ED6FF332</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
 		</dict>
 		<key>83BEC82C567C87F4D211D5AD6C2FD265</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>2E3360CFD5DE17C5D652E9B522165677</string>
+				<string>8DD0A6DFC2C7FF3BBD7300F6B64B5364</string>
 				<string>CF42C721551D7105FFF724E7758987FB</string>
 			</array>
 			<key>isa</key>
@@ -681,16 +714,18 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>96BB627600799DC4B920097C6B561B40</key>
+		<key>8DD0A6DFC2C7FF3BBD7300F6B64B5364</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>03D5F4BA492240B630DB494E0FDB4DF1</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>GLMediator</string>
 			<key>path</key>
-			<string>ReplaceMe.m</string>
+			<string>GLMediator</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -708,39 +743,19 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>A34FC13DDCD8D5D7D8E7B55FB2854A97</key>
+		<key>9DB3D3CFC88AE8028F90222BEE87FDC6</key>
 		<dict>
-			<key>baseConfigurationReference</key>
-			<string>FACCF914085BBEE6FE9BC99BD3D5B838</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/GLMediator/GLMediator-prefix.pch</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>284DEFD136028984640706A66CA8758F</string>
+				<string>461ECE601C32C9089006E651FE6679E1</string>
+			</array>
 			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>A531BC62083D0FF7F1A4A3F935E647C3</key>
 		<dict>
@@ -775,13 +790,6 @@
 			<string>Target Support Files/Pods-GLMediator_Tests</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AA94E26BA191A194146002A27F1112CA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>AADC89A5DA6D226A23D5BECFF01EAB50</key>
 		<dict>
@@ -885,6 +893,40 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>C66F57F32DEE4ED033E7002894F16ED5</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>FACCF914085BBEE6FE9BC99BD3D5B838</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/GLMediator/GLMediator-prefix.pch</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
 		<key>C85FEE59C2F7E1708ABDDEB344002233</key>
 		<dict>
 			<key>baseConfigurationReference</key>
@@ -979,6 +1021,20 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>CF677910F8CB4799E9F0AAB4C3CBD195</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0EEAEE49AED54EBDB8CCA714666C58A2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
 		<key>D41D8CD98F00B204E9800998ECF8427E</key>
 		<dict>
 			<key>attributes</key>
@@ -1014,7 +1070,7 @@
 			<string></string>
 			<key>targets</key>
 			<array>
-				<string>76FCF928BF5F40357CD99D2626B4BB6B</string>
+				<string>162514F040BF51D510F0F20B863BB115</string>
 				<string>DDAD9411B4F454ECC8C3678C09285846</string>
 				<string>DBC3697BDF3FBAD33A03EF4C3D97F38D</string>
 			</array>
@@ -1084,6 +1140,26 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>E77AF64B65C7263368C63DF36EFC583F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E818FE6487CDF03DF68333867353A297</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E818FE6487CDF03DF68333867353A297</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>E90D0A32BCC37252FB36234492B8CE36</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -1137,40 +1213,6 @@
 			<string>Pods-GLMediator_Example-frameworks.sh</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F86CF79FD396C88E1D9AB8E87FE0EECE</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>FACCF914085BBEE6FE9BC99BD3D5B838</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/GLMediator/GLMediator-prefix.pch</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
 		</dict>
 		<key>FACCF914085BBEE6FE9BC99BD3D5B838</key>
 		<dict>

@@ -1,19 +1,16 @@
 {
   "name": "GLMediator",
-  "version": "0.1.0",
-  "summary": "A short description of GLMediator.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/GLMediator",
-  "license": {
-    "type": "MIT",
-    "file": "LICENSE"
-  },
+  "version": "1.0.0",
+  "summary": "A modular solution for iOS",
+  "description": "GLMediator is a modular solution for iOS",
+  "homepage": "https://github.com/gaoli/GLMediator",
+  "license": "MIT",
   "authors": {
-    "高力": "3071730@qq.com"
+    "gaoli": "3071730@qq.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/GLMediator.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/gaoli/GLMediator.git",
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "8.0"
