@@ -21,4 +21,23 @@
     return instance;
 }
 
+- (id)performTarget:(NSString *)targetName action:(NSString *)actionName params:(NSDictionary *)params {
+    Class targetClass = NSClassFromString(targetName);
+    id    target      = [[targetClass alloc] init];
+    SEL   action      = NSSelectorFromString(actionName);
+    
+    if (target == nil) {
+        return nil;
+    }
+    
+    if ([target respondsToSelector:action]) {
+        #pragma clang diagnostic push
+        #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+        return [target performSelector:action withObject:params];
+        #pragma clang diagnostic pop
+    } else {
+        return nil;
+    }
+}
+
 @end

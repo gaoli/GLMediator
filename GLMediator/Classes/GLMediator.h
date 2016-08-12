@@ -12,4 +12,6 @@
 
 + (GLMediator *)shareInstance;
 
+- (id)performTarget:(NSString *)targetName action:(NSString *)actionName params:(NSDictionary *)params;
+
 @end
