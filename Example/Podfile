@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'GLMediator_Example' do
+  pod 'GLMediator', :path => '../'
+
+  target 'GLMediator_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
