@@ -1,6 +1,6 @@
 # GLMediator
 
-[![CI Status](http://img.shields.io/travis/高力/GLMediator.svg?style=flat)](https://travis-ci.org/高力/GLMediator)
+[![CI Status](http://img.shields.io/travis/gaoli/GLMediator.svg?style=flat)](https://travis-ci.org/gaoli/GLMediator)
 [![Version](https://img.shields.io/cocoapods/v/GLMediator.svg?style=flat)](http://cocoapods.org/pods/GLMediator)
 [![License](https://img.shields.io/cocoapods/l/GLMediator.svg?style=flat)](http://cocoapods.org/pods/GLMediator)
 [![Platform](https://img.shields.io/cocoapods/p/GLMediator.svg?style=flat)](http://cocoapods.org/pods/GLMediator)
@@ -22,7 +22,7 @@ pod "GLMediator"
 
 ## Author
 
-高力, 3071730@qq.com
+gaoli, 3071730@qq.com
 
 ## License
 

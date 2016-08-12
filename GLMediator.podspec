@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 
   s.homepage         = 'https://github.com/gaoli/GLMediator'
   s.license          = 'MIT'
-  s.author           = { '高力' => '3071730@qq.com' }
+  s.author           = { 'gaoli' => '3071730@qq.com' }
   s.source           = { :git => 'https://github.com/gaoli/GLMediator.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
