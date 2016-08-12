@@ -10,4 +10,15 @@
 
 @implementation GLMediator
 
++ (GLMediator *)shareInstance {
+    static GLMediator      *instance;
+    static dispatch_once_t onceToken;
+    
+    dispatch_once(&onceToken, ^{
+        instance = [[GLMediator alloc] init];
+    });
+    
+    return instance;
+}
+
 @end

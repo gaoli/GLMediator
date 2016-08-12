@@ -10,4 +10,6 @@
 
 @interface GLMediator : NSObject
 
++ (GLMediator *)shareInstance;
+
 @end
