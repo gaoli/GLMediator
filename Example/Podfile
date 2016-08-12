@@ -1,11 +1,9 @@
-use_frameworks!
+# use_frameworks!
 
 target 'GLMediator_Example' do
   pod 'GLMediator', :path => '../'
+end
 
-  target 'GLMediator_Tests' do
-    inherit! :search_paths
-
-    
-  end
+target 'GLMediator_Tests' do
+  pod 'GLMediator', :path => '../'
 end
