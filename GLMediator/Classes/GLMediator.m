@@ -40,4 +40,27 @@
     }
 }
 
+#pragma mark - private methods
+
+- (NSDictionary *)parseParams:(NSString *)query {
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    
+    for (NSString *param in [query componentsSeparatedByString:@"&"]) {
+        NSArray *kvPair = [param componentsSeparatedByString:@"="];
+        
+        if (kvPair.count < 2) {
+            continue;
+        }
+        
+        NSString *key = kvPair[0];
+        NSString *val = kvPair[1];
+        
+        val = [val stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        
+        [params setObject:val forKey:key];
+    }
+    
+    return params;
+}
+
 @end
