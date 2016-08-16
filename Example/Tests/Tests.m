@@ -40,5 +40,31 @@
     XCTAssert([actionName isEqualToString:@"action"]);
 }
 
-@end
+- (void)testPerformAction {
+    GLMediator *mediator = [GLMediator shareInstance];
+    NSString   *result   = [mediator performTarget:@"GLModuleA" action:@"actionA" params:nil];
+    
+    XCTAssert([result isEqualToString:@"hello, world"]);
+}
 
+- (void)testPerformActionWithParams {
+    GLMediator *mediator = [GLMediator shareInstance];
+    NSString   *result   = [mediator performTarget:@"GLModuleA" action:@"actionB:" params:@{@"name": @"gaoli"}];
+    
+    XCTAssert([result isEqualToString:@"hello, gaoli"]);
+}
+
+- (void)testPerformActionWithUrl {
+    NSURL      *url      = [NSURL URLWithString:@"scheme://GLModuleA/actionB:/?name=gaoli"];
+    GLMediator *mediator = [GLMediator shareInstance];
+    
+    mediator.scheme = @"scheme";
+    
+    NSString *result = [mediator performActionWithUrl:url completion:^(NSDictionary *info) {
+        XCTAssert([info[@"result"] isEqualToString:@"hello, gaoli"]);
+    }];
+    
+    XCTAssert([result isEqualToString:@"hello, gaoli"]);
+}
+
+@end
