@@ -21,6 +21,22 @@
     return instance;
 }
 
+- (id)init {
+    self = [super init];
+    
+    if (self) {
+        self.parseTargetBlock = ^(NSURL *url) {
+            return url.host;
+        };
+        
+        self.parseActionBlock = ^(NSURL *url) {
+            return [url.path stringByReplacingOccurrencesOfString:@"/" withString:@""];
+        };
+    }
+    
+    return self;
+}
+
 - (id)performTarget:(NSString *)targetName action:(NSString *)actionName params:(NSDictionary *)params {
     Class targetClass = NSClassFromString(targetName);
     id    target      = [[targetClass alloc] init];

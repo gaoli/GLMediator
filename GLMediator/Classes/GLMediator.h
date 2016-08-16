@@ -8,9 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NSString* (^GLParseTargetBlock)(NSURL *url);
+typedef NSString* (^GLParseActionBlock)(NSURL *url);
+
 @interface GLMediator : NSObject
 
-@property (nonatomic, copy) NSString *scheme;
+@property (nonatomic, copy) NSString           *scheme;
+@property (nonatomic, copy) GLParseTargetBlock  parseTargetBlock;
+@property (nonatomic, copy) GLParseActionBlock  parseActionBlock;
 
 + (GLMediator *)shareInstance;
 
