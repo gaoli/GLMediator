@@ -6,6 +6,8 @@
 //  Copyright (c) 2016 gaoli. All rights reserved.
 //
 
+#import "GLMediator.h"
+
 @import XCTest;
 
 @interface Tests : XCTestCase
@@ -14,22 +16,29 @@
 
 @implementation Tests
 
-- (void)setUp
-{
+- (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
-- (void)tearDown
-{
+- (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
-//- (void)testExample
-//{
-//    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
-//}
+- (void)testParseTarget {
+    NSURL    *url        = [NSURL URLWithString:@"scheme://target/action"];
+    NSString *targetName = [GLMediator shareInstance].parseTargetBlock(url);
+    
+    XCTAssert([targetName isEqualToString:@"target"]);
+}
+
+- (void)testParseAction {
+    NSURL    *url        = [NSURL URLWithString:@"scheme://target/action"];
+    NSString *actionName = [GLMediator shareInstance].parseActionBlock(url);
+    
+    XCTAssert([actionName isEqualToString:@"action"]);
+}
 
 @end
 
