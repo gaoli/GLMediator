@@ -37,6 +37,25 @@
     return self;
 }
 
+- (id)performActionWithUrl:(NSURL *)url completion:(void(^)(NSDictionary *info))completion {
+    NSString     *scheme     = url.scheme;
+    NSDictionary *params     = [self parseParams:url.query];
+    NSString     *targetName = self.parseTargetBlock(url);
+    NSString     *actionName = self.parseActionBlock(url);
+    
+    if (![[scheme lowercaseString] isEqualToString:[self.scheme lowercaseString]]) {
+        return @(NO);
+    }
+    
+    id result = [self performTarget:targetName action:actionName params:params];
+    
+    if (completion) {
+        completion(@{@"result": result});
+    }
+    
+    return result;
+}
+
 - (id)performTarget:(NSString *)targetName action:(NSString *)actionName params:(NSDictionary *)params {
     Class targetClass = NSClassFromString(targetName);
     id    target      = [[targetClass alloc] init];

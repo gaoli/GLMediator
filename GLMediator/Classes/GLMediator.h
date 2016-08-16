@@ -19,6 +19,8 @@ typedef NSString* (^GLParseActionBlock)(NSURL *url);
 
 + (GLMediator *)shareInstance;
 
+- (id)performActionWithUrl:(NSURL *)url completion:(void(^)(NSDictionary *info))completion;
+
 - (id)performTarget:(NSString *)targetName action:(NSString *)actionName params:(NSDictionary *)params;
 
 @end
