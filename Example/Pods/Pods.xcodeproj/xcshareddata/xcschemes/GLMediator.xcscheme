@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '0AEEC003D748B21C57766F14'
+               BlueprintIdentifier = '46862554CF01D1DC41C6BE83'
                BlueprintName = 'GLMediator'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libGLMediator.a'>
