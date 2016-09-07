@@ -73,9 +73,11 @@
     
     mediator.scheme = @"scheme";
     
-    [mediator performActionWithUrl:url completion:^(NSDictionary *info) {
+    NSString *result = [mediator performActionWithUrl:url completion:^(NSDictionary *info) {
         XCTAssertEqual(info[@"result"], [NSNull null]);
     }];
+    
+    XCTAssertNil(result);
 }
 
 - (void)testParamIsJson {
