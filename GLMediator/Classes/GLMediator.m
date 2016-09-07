@@ -50,7 +50,11 @@
     id result = [self performTarget:targetName action:actionName params:params];
     
     if (completion) {
-        completion(@{@"result": result});
+        if (result) {
+            completion(@{@"result": result});
+        } else {
+            completion(@{@"result": [NSNull null]});
+        }
     }
     
     return result;
