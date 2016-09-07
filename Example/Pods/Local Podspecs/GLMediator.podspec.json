@@ -1,6 +1,6 @@
 {
   "name": "GLMediator",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "summary": "A modular solution for iOS",
   "description": "GLMediator is a modular solution for iOS",
   "homepage": "https://github.com/gaoli/GLMediator",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/gaoli/GLMediator.git",
-    "tag": "1.0.0"
+    "tag": "1.1.0"
   },
   "platforms": {
     "ios": "8.0"
