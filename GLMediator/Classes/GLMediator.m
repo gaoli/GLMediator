@@ -96,7 +96,15 @@
         
         val = [val stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
         
-        [params setObject:val forKey:key];
+        if (([val hasPrefix:@"["] && [val hasSuffix:@"]"]) ||
+            ([val hasPrefix:@"{"] && [val hasSuffix:@"}"])) {
+            NSData *data = [val dataUsingEncoding:NSUTF8StringEncoding];
+            id      json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+            
+            [params setObject:json forKey:key];
+        } else {
+            [params setObject:val  forKey:key];
+        }
     }
     
     return params;
