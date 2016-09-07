@@ -18,4 +18,8 @@
     return [NSString stringWithFormat:@"hello, %@", params[@"name"]];
 }
 
+- (NSString *)actionC {
+    return nil;
+}
+
 @end

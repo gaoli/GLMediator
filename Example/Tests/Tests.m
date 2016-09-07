@@ -67,4 +67,15 @@
     XCTAssert([result isEqualToString:@"hello, gaoli"]);
 }
 
+- (void)testResultIsNil {
+    NSURL      *url      = [NSURL URLWithString:@"scheme://GLModuleA/actionC"];
+    GLMediator *mediator = [GLMediator shareInstance];
+    
+    mediator.scheme = @"scheme";
+    
+    [mediator performActionWithUrl:url completion:^(NSDictionary *info) {
+        XCTAssertEqual(info[@"result"], [NSNull null]);
+    }];
+}
+
 @end

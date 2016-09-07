@@ -12,5 +12,6 @@
 
 - (NSString *)actionA;
 - (NSString *)actionB:(NSString *)name;
+- (NSString *)actionC;
 
 @end
