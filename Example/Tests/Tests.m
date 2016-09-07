@@ -78,4 +78,23 @@
     }];
 }
 
+- (void)testParamIsJson {
+    NSURL      *url1     = [NSURL URLWithString:@"scheme://GLModuleA/actionD:/?info=%5B%22gaoli%22%5D"];
+    NSURL      *url2     = [NSURL URLWithString:@"scheme://GLModuleA/actionD:/?info=%7B%22name%22%3A%22gaoli%22%7D"];
+    GLMediator *mediator = [GLMediator shareInstance];
+    
+    mediator.scheme = @"scheme";
+    
+    NSString *result1 = [mediator performActionWithUrl:url1 completion:^(NSDictionary *info) {
+        XCTAssert([info[@"result"] isEqualToString:@"hello, gaoli"]);
+    }];
+    
+    NSString *result2 = [mediator performActionWithUrl:url2 completion:^(NSDictionary *info) {
+        XCTAssert([info[@"result"] isEqualToString:@"hello, gaoli"]);
+    }];
+    
+    XCTAssert([result1 isEqualToString:@"hello, gaoli"]);
+    XCTAssert([result2 isEqualToString:@"hello, gaoli"]);
+}
+
 @end

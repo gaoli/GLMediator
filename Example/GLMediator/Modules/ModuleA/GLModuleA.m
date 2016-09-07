@@ -22,4 +22,17 @@
     return nil;
 }
 
+- (NSString *)actionD:(NSDictionary *)params {
+    id        info = params[@"info"];
+    NSString *name = nil;
+    
+    if ([info isKindOfClass:[NSArray class]]) {
+        name = info[0];
+    } else {
+        name = info[@"name"];
+    }
+    
+    return [NSString stringWithFormat:@"hello, %@", name];
+}
+
 @end
